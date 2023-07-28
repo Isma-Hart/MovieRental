@@ -1,0 +1,97 @@
+// GET ALL MOVIES IN STOCK
+GET http://localhost:3000/movierental
+
+
+###
+// GET BY ID
+GET http://localhost:3000/movierental/64c4024b68f0b4cb396cff7a
+
+
+###
+// GET BY TITLE
+GET http://localhost:3000/movierental/title/Oppenheimer
+
+
+###
+// GET BY DIRECTOR
+GET http://localhost:3000/movierental/director/Greta Gerwig
+
+
+###
+// GET BY PARENTALRATING
+GET http://localhost:3000/movierental/parentalRating/R
+
+
+###
+// GET BY RELEASEYEAR
+GET http://localhost:3000/movierental/releaseYear/2023
+
+
+###
+// GET BY GENRE
+GET http://localhost:3000/movierental/GENRE/Thriller
+
+
+
+###
+// POST A NEW MOVIE
+POST http://localhost:3000/movierental
+Content-Type: application/json
+
+{
+    "title": "Barbie",
+    "director": "Greta Gerwig",
+    "parentalRating": "PG-13",
+    "releaseYear": "2023",
+    "genre": "Comedy/Drama"
+}
+
+
+###
+// POST A NEW MOVIE
+POST http://localhost:3000/movierental
+Content-Type: application/json
+
+{
+    "title": "Oppenheimer",
+    "director": "Christopher Nolan",
+    "parentalRating": "R",
+    "releaseYear": "2023",
+    "genre": "Drama/Thriller"
+}
+
+
+###
+// DELETE MOVIE BY ID
+DELETE http://localhost:3000/movierental/64c3f4f03f5bf5ee59eaa144
+
+
+// CORRECT/UPDATE/PATCH MOVIE BY ID
+###
+PATCH http://localhost:3000/movierental/64c3dfd8db75103588d3f1f8
+Content-Type: application/json
+
+{
+    "title": "BARBIE",
+    "director": "Isma Perez"
+}
+
+
+// CONTROLLING STOCK
+###
+PATCH http://localhost:3000/movierental//title/Oppenheimer/stock
+Content-Type: application/json
+
+{
+    "movieCount": 7
+}
+
+
+// RENTS MOVIE 
+###
+PATCH http://localhost:3000/movierental/title/Oppenheimer/rent
+
+
+
+###
+PATCH http://localhost:3000/movierental/title/Oppenheimer/return
