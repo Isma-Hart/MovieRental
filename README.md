@@ -2,7 +2,7 @@
 REST API for a movie rental store.
 
 
-Create a rest api for a movie rental store, where it should control stock (CRUD) and rental of available dvds.
+"Create a rest api for a movie rental store, where it should control stock (CRUD) and rental of available dvds.
 
 Feel free to use whatever language you are most comfortable with.
 
@@ -21,4 +21,6 @@ Film {
    ParentalRating string
    ReleaseYear number
    Genre string
-}
+}"
+
+Where to get started:
