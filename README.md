@@ -15,12 +15,12 @@ To help:
 A film can be described by the generic structure
 
 Film {
-   Title string
-   //Subtitle string
-   Author string
-   ParentalRating string
-   ReleaseYear number
-   Genre string
+Title string
+//Subtitle string
+Author string
+ParentalRating string
+ReleaseYear number
+Genre string
 }"
 
 Where to get started:
