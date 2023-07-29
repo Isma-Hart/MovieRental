@@ -55,3 +55,7 @@ Installation:
 
 
 Testing and Usage
+Testing can vary depending on user choice, I used and recommend the extension "REST Client" by Huachao Mao which can be easily found in Visual Studio Code. The route.rest file includes all the necessary notes and specific cases to cover testing. 
+This REST API can be used to add, and delete movies from a movie rental store's available showings. It can also modify generic information about the movie. This REST API also has the capability of showing the number of available DVDs for a specific film and the number of currently rented DVDs of that specific film. One can also look movies up by title, id, director, etc. 
+
+Enjoy!
